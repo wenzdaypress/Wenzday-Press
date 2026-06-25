@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import type { FormEvent } from 'react';
 
@@ -79,12 +80,17 @@ export default function Header() {
             style={interFont}
           >
             <span className="inline-flex items-center gap-3">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-white/65 text-[9px] font-bold uppercase tracking-[0.12em] text-white/85 sm:h-10 sm:w-10 sm:text-[10px]">
-                Logo
-              </span>
+              <Image
+  src="/logo.png"
+  alt="The Wenzday Press"
+  width={52}
+  height={52}
+  priority
+  className="h-11 w-11 object-contain sm:h-[52px] sm:w-[52px]"
+/>
               <span className="relative inline-block">
-                <span className="absolute left-0 -top-4 text-[10px] font-bold uppercase tracking-[0.22em] text-white/85">
-                  THE
+                <span className="absolute left-0 -top-3 text-[11px] font-semibold tracking-[0.08em] text-white/85">
+                  The
                 </span>
                 <span className="block text-2xl font-bold leading-none tracking-[0.02em] sm:text-4xl lg:text-5xl">
                   Wenzday Press
