@@ -200,6 +200,22 @@ const categoryCopy: Record<string, string[]> = {
     'Constitution bench to hear federal powers reference',
     'Regulators issue draft guidance on consumer redress systems',
   ],
+    Explainer: [
+    'Why inflation remains sticky despite easing commodity prices',
+    'Explained: How the collegium system appoints judges',
+    'Understanding the fiscal deficit in simple terms',
+    'Why monsoon forecasts matter for India’s economy',
+    'Breaking down the latest data protection regulations',
+    'How electoral bonds changed political funding debates',
+  ],
+  International: [
+    'Leaders meet to discuss maritime security in the Indo-Pacific',
+    'Global markets react to central bank policy signals',
+    'Ceasefire negotiations continue under international mediation',
+    'Climate summit delegates debate financing commitments',
+    'Major economies announce new technology cooperation framework',
+    'Regional trade bloc approves expanded investment agreement',
+  ],
 };
 
 export const categorySections = Object.entries(categoryCopy).map(([category, headlines]) => ({
